@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ee">
+  <title>Multiply Club · A little practice, a big adventure</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="./"><span class="brand-icon">×</span> multiply club<span class="brand-dot">.</span></a><span class="header-note">SMALL STEPS. BIG BRAINPOWER.</span></header>
+  <main>
+    <div class="intro"><span class="eyebrow"><span></span> THE DAILY BRAIN STRETCH</span><h1>Little numbers.<br><span>Big possibilities.</span></h1><p>Ten tiny challenges to grow your multiplication muscles.<br class="desktop-break"> Take your time. You’ve got this!</p></div>
+    <section class="quiz-card" aria-label="Multiplication quiz">
+      <div id="play-screen">
+        <div class="quiz-top"><span id="question-count">QUESTION 01 OF 10</span><span class="score-badge">✦ <span id="score">0</span> points</span></div>
+        <div class="progress-track" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><div id="progress"></div></div>
+        <div class="question-body"><div class="prompt-label">LET’S FIGURE THIS ONE OUT</div><h2 id="question">2 <span>×</span> 3 <span>=</span> <span class="mystery">?</span></h2><form id="answer-form"><label for="answer">Your answer</label><div class="answer-row"><input id="answer" type="number" min="0" max="100" step="1" inputmode="numeric" placeholder="Type here" required autocomplete="off" aria-describedby="feedback"><button id="check-button" type="submit">Check answer <span>→</span></button></div></form><div id="feedback" role="status" aria-live="polite">A little thinking goes a long way. <span>✧</span></div><button id="next-button" class="next-button" hidden>Next question →</button></div>
+        <div class="card-footer"><span>☀ <strong>No timer, no pressure.</strong> Just a little practice.</span><span>+10 points per correct answer</span></div>
+      </div>
+      <div id="result-screen" hidden><div class="result-art">✦</div><span class="eyebrow">TEN CHALLENGES. ONE AWESOME YOU.</span><h2>You did it!</h2><p id="result-message"></p><div class="final-score"><span id="final-score">0</span><small> / 100 points</small></div><p id="correct-count"></p><button id="restart-button">Play again <span>↻</span></button></div>
+    </section>
+    <div class="below-card"><span class="little-star">✳</span><p>Every try makes your brain a little stronger.</p><span class="little-star">✳</span></div>
+    <footer>MADE FOR CURIOUS MINDS <span>·</span> AGES 6–10</footer>
+  </main>
+</body>
+</html>
